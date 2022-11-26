@@ -1,0 +1,18 @@
+/* Created by Unreasonable */
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	user-select: none;
+}
+
+.btn{
+	display: flex;
+}
+
+input{
+	width: 50px;
+}
