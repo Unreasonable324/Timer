@@ -1,9 +1,3 @@
-<!-- Created by Unreasonable -->
-
-<!--
-https://www.sololearn.com/discuss/3106941/timer-does-not-stop-️-️-️	
--->
-
 <!doctype html>
 <html lang="en">
 
@@ -11,36 +5,42 @@ https://www.sololearn.com/discuss/3106941/timer-does-not-stop-️-️-️
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-	<!--<link rel="stylesheet" href="style.css">-->
-
-	<title>timer</title>	
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/ef7b626c97.js" crossorigin="anonymous"></script>
+	<title>Timer</title>
 </head>
 
 <body>
-	
-	<div>
-		<label id="lblTime"></label>
-	</div>
-	<br>
-	<div>
-		<input type="number" class="timer-input" id="yrs" placeholder="years" min="0" max="99" onkeyup=enforceMinMax(this)>
-    	<input type="number" class="timer-input" id="day" placeholder="days" min="0" max="364" onkeyup=enforceMinMax(this)>
-		<input type="number" class="timer-input" id="hrs" placeholder="hrs" min="0" max="59" onkeyup=enforceMinMax(this)>
-		<input type="number" class="timer-input" id="min" placeholder="min" min="0" max="59" onkeyup=enforceMinMax(this)>
-		<input type="number" class="timer-input" id="sec" placeholder="sec" min="0" max="59" onkeyup=enforceMinMax(this)>
-		<button id="OK" >OK</button>
-	</div>
-	<div class="btn">
-		
-		
-		<button id="start" disabled>start</button>
-		<button id="pause" disabled>pause</button>
-		<button id="reset" disabled>reset</button>
+	<div class="timer">
+		<div>
+			<label class="lblTime" id="lblTime"></label>
+		</div>
+		<div id="inputs" class="inputs">
+			<div class="input">
+				<input type="number" class="timer-input" id="yrs" placeholder="Y" min="0" max="99"
+					onkeyup=enforceMinMax(this)>
+				<input type="number" class="timer-input" id="day" placeholder="D" min="0" max="364"
+					onkeyup=enforceMinMax(this)>
+				<input type="number" class="timer-input" id="hrs" placeholder="H" min="0" max="59"
+					onkeyup=enforceMinMax(this)>
+				<input type="number" class="timer-input" id="min" placeholder="M" min="0" max="59"
+					onkeyup=enforceMinMax(this)>
+				<input type="number" class="timer-input" id="sec" placeholder="S" min="0" max="59"
+					onkeyup=enforceMinMax(this)>
+			</div>
+			<div class="btnoks">
+				<button class="btnOK btn" id="OK"><i class="fa-regular fa-circle-check"></i></button>
+			</div>
+		</div>
+		<div class="btns" id="btns">
+			<!-- <button id="OK">OK</button> -->
+			<button class="btn" id="start" disabled><i class="fa-solid fa-play"></i></button>
+			<button class="btn" id="pause" disabled><i class="fa-solid fa-pause"></i></button>
+			<button class="btn" id="reset" disabled><i class="fa-solid fa-stop"></i></button>
+		</div>
 	</div>
 
-    <script src="app.js"></script>
+	<script src="app.js"></script>
 </body>
 
 </html>
