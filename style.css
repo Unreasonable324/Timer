@@ -50,7 +50,10 @@ body {
 	user-select: none;
 	background-color: #cfcbcb;
 }
+.timer{
+	font-size: 40px;
 
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -72,7 +75,6 @@ input::-webkit-inner-spin-button {
 	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 	color: #fff;
 	user-select: none;
-	/* font-size: 28px; */
 	font-family: 'JetBrains Mono', monospace;
 	min-width: 385px;
 }
